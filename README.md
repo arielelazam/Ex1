@@ -52,7 +52,3 @@ Clone the repository from GitHub and run the Java classes.
 
 ## License
 This project is licensed under the MIT License.
-
----
-
-Hope this fits the bill! If there's anything else you'd like to tweak or add, I'm here to help! 😊
