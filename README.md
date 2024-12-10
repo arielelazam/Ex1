@@ -1,56 +1,58 @@
-# Ex1
-
-# Project: Base Conversion Calculator
+# Base Conversion Calculator
 
 ## Introduction
-This project is a Java-based calculator designed to convert numbers between various bases. The project includes multiple functions to validate, convert, and manipulate numbers in different base systems.
+This Java Project helps convert numbers between different bases. A few functions created to validate, convert, and manage numbers in various base systems.
 
 ## Function Descriptions
-The following functions are located in the Ex1.java class:
+These functions are in Ex1.java:
 
 ### number2Int
 - **Input**: A string in the format `numberbbase` (e.g., `5b8`).
-- **Output**: The decimal integer representation of the number.
+- **Output**: The number in decimal.
 - **Conditions**:
   - The base must be between 2 and 16.
-  - For bases 10 and above, numbers are represented using letters A, B, etc., with A=10, B=11, up to G=16.
-  - The input must not contain spaces and must include both a number and a base.
-  - The input must not contain unrelated symbols or letters other than A to G (G is only allowed in base 16).
+  - For bases 10 and above, use letters A to G (A=10, B=11, etc.).
+  - No spaces or illegal characters (only A to G allowed).
 
 ### isNumeric
-- **Input**: A string representing a number.
-- **Output**: A boolean indicating whether the string contains only numeric digits.
-- **Usage**: A helper function for validating numeric strings.
+- **Input**: A numeric string.
+- **Output**: Boolean indicating if the string contains only digits.
 
 ### isNumber
-- **Input**: A string representing a number.
-- **Output**: A boolean indicating whether the string is a valid number according to the criteria defined in `number2Int`.
-- **Usage**: Ensures the number is valid in the specified base.
+- **Input**: A numeric string.
+- **Output**: Boolean indicating if the string is valid based on the criteria.
 
 ### int2Number
-- **Input**: Two integers, one representing a number and one representing a base.
-- **Output**: A string representing the number in the specified base (e.g., `100` in base 2 becomes `100b2`).
+- **Input**: Two integers (number and base).
+- **Output**: A string representing the number in the given base (e.g., `100` in base 2 is `100b2`).
 
 ### maxIndex
-- **Input**: An array of strings representing numbers in various bases.
-- **Output**: An integer representing the index of the string with the highest decimal value.
-- **Usage**: Finds the maximum decimal value in an array of base-represented numbers.
+- **Input**: An array of numeric strings in various bases.
+- **Output**: The index of the string with the highest decimal value.
 
 ## Features
-- **number2Int**: Converts a string representation of a number in a given base (e.g., `5b8`) to its decimal (base 10) integer representation.
-- **isNumeric**: A helper function that checks if a given string contains only numeric digits.
-- **isNumber**: Validates a string to ensure it meets the criteria for being a valid number in the specified base.
-- **int2Number**: Converts an integer from base 10 to a specified base and returns the result as a string (e.g., `100` in base 2 becomes `100b2`).
-- **maxIndex**: Takes an array of strings representing numbers in various bases and returns the index of the string with the highest decimal value.
+- Convert a string with a number in a specific base to decimal.
+- Helper functions for validating numbers.
+- Convert a decimal number to a given base.
+- Find the index with the highest decimal value.
 
 ## Tests
-The following class includes tests and analysis:
-- **Ex1Test.java**: Includes test cases for each function to ensure their correctness.
+Tests are in Ex1Test.java and include cases for all functions.
 
 ## Usage
-To use the calculator, input numbers and bases following the required format and receive the converted outputs.
-- **Ex1Main.java**: Handles user input and output for converting numbers according to the specified format.
+Using the calculator is easy! Just input numbers and bases in the correct format and get the results.
+- Ex1Main.java: Handles user input and output.
 
 ## Example
 - Input: `5b8`, `A1b12`, `100b2`
-- Output: `5`, `121`, `4`.
+- Output: `5`, `121`, `4`
+
+## Installation
+Clone the repository from GitHub and run the Java classes.
+
+## License
+This project is licensed under the MIT License.
+
+---
+
+Hope this fits the bill! If there's anything else you'd like to tweak or add, I'm here to help! 😊
