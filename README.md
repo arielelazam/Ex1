@@ -46,9 +46,3 @@ Using the calculator is easy! Just input numbers and bases in the correct format
 ## Example
 - Input: `5b8`, `A1b12`, `100b2`
 - Output: `5`, `121`, `4`
-
-## Installation
-Clone the repository from GitHub and run the Java classes.
-
-## License
-This project is licensed under the MIT License.
